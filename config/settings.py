@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'photo',
     'accounts',
+    'disqus',
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +128,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_REDIRECT_URL = '/'
+
+# For disqus
+DISQUS_WEBSITE_SHORTNAME = 'django-photobook'
+SITE_ID = 1
